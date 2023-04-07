@@ -915,8 +915,21 @@ console.log(codeNum.length);
       'ь', 'ю', 'я', 'А', 'Б', 'В', 'Г', 'Ґ', 'Д', 'Е', 
       'Є', 'Ж', 'З', 'И', 'І', 'Ї', 'Й', 'К', 'Л', 'М', 
       'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 
-      'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я'
+      'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я', "A", "B", "C", "D", 
+      "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
+      "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", 
+      "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", 
+      "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
+      "s", "t", "u", "v", "w", "x", "y", "z", '0', '1', 
+      '2', '3', '4', '5', '6', '7', '8', '9', ',', '.', 
+      '?', '!', ';', ':', '-', '_', '+', '*', '/', '\\', 
+      '@', '#', '$', '%', '&', '(', ')', '[', ']', '{', 
+      '}', '|', '`', '~', "'", '"', '<', '>', '=', '^', 
+      '§', '±', '×', '÷', '©', '®', '™',
   ];
+
+ 
+
 
 console.log(alphabet.length); 
 
@@ -931,10 +944,10 @@ function findIndex(alphabet, letters, codeNum, i) {
   if (indexElem !== -1) {
     let chengIndex = +indexElem + +code;
 
-    if (chengIndex === 66) {
+    if (chengIndex === 167) {
       chengIndex = 0;
-    } else if (chengIndex > 66) {
-      chengIndex -= 66;
+    } else if (chengIndex > 167) {
+      chengIndex -= 167;
     }
 
     return chengIndex;
@@ -949,9 +962,9 @@ function returnIndex(alphabet, newArray, codeNum, i) {
     let chengIndex = +indexElem - +code;
 
     if (chengIndex === -1) {
-      chengIndex = 65;
+      chengIndex = 166;
     } else if (chengIndex < -1) {
-      chengIndex += 66;
+      chengIndex += 167;
     }
 
     return chengIndex;
