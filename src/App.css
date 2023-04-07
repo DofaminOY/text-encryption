@@ -1,9 +1,8 @@
 .section {
   margin-left: 100px;
+  }
   
-}
-
-.button {
+  .button {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -11,9 +10,9 @@
   border-radius: 4px;
   cursor: pointer;
   margin-right: 10px;
-}
-
-.textarea {
+  }
+  
+  .textarea {
   font-size: 3em;
   width: 90%;
   height: calc(50vh - 300px);
@@ -23,14 +22,40 @@
   margin: 10px auto;
   box-sizing: border-box;
   word-wrap: break-word;
-}
-
-.label {
+  }
+  
+  .label {
   display: block;
   font-weight: bold;
-}
-
-.output {
+  }
+  
+  .output {
   font-weight: bold;
   font-size: 16px;
-}
+  }
+  
+  @media only screen and (max-width: 767px) {
+  .section {
+  margin-left: 20px;
+  }
+  
+  .textarea {
+  font-size: 2em;
+  height: calc(50vh - 200px);
+  }
+  }
+  
+  @media only screen and (max-width: 480px) {
+  .section {
+  margin-left: 10px;
+  }
+  
+  .button {
+  margin-right: 5px;
+  }
+  
+  .textarea {
+  font-size: 1.5em;
+  height: calc(50vh - 150px);
+  }
+  }
