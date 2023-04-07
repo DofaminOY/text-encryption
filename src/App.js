@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./App.css";
 
 const codeNum = [
@@ -974,6 +974,8 @@ function returnIndex(alphabet, newArray, codeNum, i) {
 function App() {
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState("");
+  
+  
 
   const handleInputChange = (event) => {
     setInputText(event.target.value);
@@ -1012,20 +1014,42 @@ function App() {
 
     setOutputText(newArray.join(""));
   };
+  const handlePasteClick = async () => {
+    try {
+      const text = await navigator.clipboard.readText();
+      setInputText(text);
+    } catch (error) {
+      console.error('Failed to read clipboard contents: ', error);
+    }
+  };
+
+  const handleCopyClick = async () => {
+    try {
+      await navigator.clipboard.writeText(outputText);
+      console.log('Output text copied to clipboard!');
+    } catch (error) {
+      console.error('Failed to copy output text to clipboard: ', error);
+    }
+  };
+  
+
 
   return (
     <div className="section">
-      <h1>Шифрування та розшифрування тексту</h1>
-      <label htmlFor="input" className="label">Введіть текст:</label>
-      <textarea id="input" value={inputText} onChange={handleInputChange} className="textarea" />
-      <br /><br />
-      <button onClick={handleEncryptClick} className="button">Зашифрувати</button>
-      <button onClick={handleDecryptClick} className="button">Розшифрувати</button>
-      <br /><br />
-      <label htmlFor="output" className="label">Результат:</label>
-      <textarea id="output" value={outputText} readOnly className="textarea" />
-    </div>
-  );
+    <h1>Шифрування та розшифрування тексту</h1>
+    <label htmlFor="input" className="label">Введіть текст:</label>
+    <textarea id="input" value={inputText} onChange={handleInputChange} className="textarea" />
+    <br /><br />
+    <button onClick={handleEncryptClick} className="button">Зашифрувати</button>
+    <button onClick={handleDecryptClick} className="button">Розшифрувати</button>
+    <button onClick={() => handlePasteClick('Вставка тексту')} className="button">Вставити текст</button>
+    <button onClick={handleCopyClick} className="button">Копіювати результат</button>
+    <br /><br />
+    <label htmlFor="output" className="label">Результат:</label>
+    <textarea id="output" value={outputText} readOnly className="textarea" />
+    
+  </div>
+);
 }
 
 export default App;

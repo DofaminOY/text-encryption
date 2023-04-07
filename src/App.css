@@ -59,3 +59,34 @@
   height: calc(50vh - 150px);
   }
   }
+  @media only screen and (max-width: 767px) {
+    .section {
+      margin-left: 20px;
+    }
+    
+    .button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .textarea {
+      font-size: 2em;
+      height: calc(50vh - 200px);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .section {
+      margin-left: 10px;
+    }
+    
+    .button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .textarea {
+      font-size: 1.5em;
+      height: calc(50vh - 150px);
+    }
+  }
