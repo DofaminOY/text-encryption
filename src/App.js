@@ -918,6 +918,8 @@ console.log(codeNum.length);
       'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я'
   ];
 
+console.log(alphabet.length); 
+
 function extractLetters(str) {
   return str.split("");
 }
@@ -925,13 +927,13 @@ function extractLetters(str) {
 function findIndex(alphabet, letters, codeNum, i) {
   const indexElem = alphabet.indexOf(letters[i]);
   const code = codeNum[i];
-
+  debugger;
   if (indexElem !== -1) {
     let chengIndex = +indexElem + +code;
 
     if (chengIndex === 66) {
       chengIndex = 0;
-    } else if (chengIndex > 64) {
+    } else if (chengIndex > 66) {
       chengIndex -= 66;
     }
 
@@ -947,7 +949,7 @@ function returnIndex(alphabet, newArray, codeNum, i) {
     let chengIndex = +indexElem - +code;
 
     if (chengIndex === -1) {
-      chengIndex = 64;
+      chengIndex = 65;
     } else if (chengIndex < -1) {
       chengIndex += 66;
     }
