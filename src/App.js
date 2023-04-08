@@ -908,27 +908,42 @@ console.log(codeNum.length);
 
 
 
+  // const alphabet = [
+  //     'а', 'б', 'в', 'г', 'ґ', 'д', 'е', 'є', 'ж', 'з',
+  //     'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п',
+  //     'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ',
+  //     'ь', 'ю', 'я', 'А', 'Б', 'В', 'Г', 'Ґ', 'Д', 'Е', 
+  //     'Є', 'Ж', 'З', 'И', 'І', 'Ї', 'Й', 'К', 'Л', 'М', 
+  //     'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 
+  //     'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я', "A", "B", "C", "D", 
+  //     "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
+  //     "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", 
+  //     "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", 
+  //     "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
+  //     "s", "t", "u", "v", "w", "x", "y", "z", '0', '1', 
+  //     '2', '3', '4', '5', '6', '7', '8', '9', ',', '.', 
+  //     '?', '!', ';', ':', '-', '_', '+', '*', '/', '\\', 
+  //     '@', '#', '$', '%', '&', '(', ')', '[', ']', '{', 
+  //     '}', '|', '`', '~', "'", '"', '<', '>', '=', '^', 
+  //     '§', '±', '×', '÷', '©', '®', '™',
+  // ];
+
   const alphabet = [
-      'а', 'б', 'в', 'г', 'ґ', 'д', 'е', 'є', 'ж', 'з',
-      'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п',
-      'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ',
-      'ь', 'ю', 'я', 'А', 'Б', 'В', 'Г', 'Ґ', 'Д', 'Е', 
-      'Є', 'Ж', 'З', 'И', 'І', 'Ї', 'Й', 'К', 'Л', 'М', 
-      'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 
-      'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я', "A", "B", "C", "D", 
-      "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
-      "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", 
-      "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", 
-      "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
-      "s", "t", "u", "v", "w", "x", "y", "z", '0', '1', 
-      '2', '3', '4', '5', '6', '7', '8', '9', ',', '.', 
-      '?', '!', ';', ':', '-', '_', '+', '*', '/', '\\', 
-      '@', '#', '$', '%', '&', '(', ')', '[', ']', '{', 
-      '}', '|', '`', '~', "'", '"', '<', '>', '=', '^', 
-      '§', '±', '×', '÷', '©', '®', '™',
+    '3', '.', 'N', '=', 'P', 'd', '4', '9', 'f', '±', 'ь', 'о', ')', 'Й', 'p', 
+    'С', 'R', 'G', 'д', 'п', '1', '+', '!', ']', 'і', '8', '6', 'У', '*', 'Ю', 
+    'П', '|', 'м', 'р', 'g', 'e', 'а', '0', 'ш', '©', 'Г', '^', 'w', 'Л', 'Є', 
+    'o', '~', 'Х', 'E', '/', 'є', '#', 'Ш', 'х', 'б', 'v', 'ф', 'ж', ':', '®', 
+    'L', 'Т', 'y', 'K', '7', 'T', 'к', 'Б', '>', 'ґ', '§', 'г', 'D', 'M', '÷', 
+    '2', ';', 'й', 'н', 'І', 'М', '@', '\\', 'Я', 'Q', 'и', 'X', '{', 'j', 'H', 
+    'з', 'щ', '`', 'l', '$', 'Ж', 'В', 'J', 'у', 'Z', "V", "I", "ц", "B", "x", 
+    "C", "A", "[", "(", "&", ",", "О", "c", "s", "в", "Щ", "-", "Ф", "Ї", "'", 
+    "<", "™", "m", "ю", "И", "%", "b", "е", "Ь", "З", "r", "×", "Ч", "h", "S", 
+    "?", "ч", "Н", "_", "F", "i", "с", "5", "O", "\"", "z", "k", "л", "т", "U", 
+    "W", "Y", "Е", "Ґ", "ї", "n", "А", "я", "u", "Ц", "a", "Р", "К", "t", "q", 
+    "}", "Д",
   ];
 
- 
+
 
 
 console.log(alphabet.length); 
@@ -1034,20 +1049,21 @@ function App() {
   
 
 
+
   return (
     <div className="section">
-    <h1>Шифрування та розшифрування тексту</h1>
-    <label htmlFor="input" className="label">Введіть текст:</label>
-    <textarea id="input" value={inputText} onChange={handleInputChange} className="textarea" />
-    <br /><br />
-    <button onClick={handleEncryptClick} className="button">Зашифрувати</button>
-    <button onClick={handleDecryptClick} className="button">Розшифрувати</button>
-    <button onClick={() => handlePasteClick('Вставка тексту')} className="button">Вставити текст</button>
-    <button onClick={handleCopyClick} className="button">Копіювати результат</button>
-    <br /><br />
-    <label htmlFor="output" className="label">Результат:</label>
-    <textarea id="output" value={outputText} readOnly className="textarea" />
-    
+      <h1>Шифрування та розшифрування тексту</h1>
+      <label htmlFor="input" className="label">Введіть текст:</label>
+      <textarea id="input" value={inputText} onChange={handleInputChange} className="textarea" />
+      <br /><br />
+        <button onClick={handleEncryptClick} className="button">Зашифрувати</button>
+        <button onClick={handleDecryptClick} className="button">Розшифрувати</button>
+        <button onClick={() => handlePasteClick('Вставка тексту')} className="button">Вставити текст</button>
+        <button onClick={handleCopyClick} className="button">Копіювати результат</button>
+      <br /><br />
+      <label htmlFor="output" className="label">Результат:</label>
+      <textarea id="output" value={outputText} readOnly className="textarea" />
+      
   </div>
 );
 }
